@@ -1,11 +1,17 @@
-import Home from "@/page/Home";
+import Home from "@/pages/Home";
+import Layout from "@/pages/Layout";
 import { createHashRouter } from "react-router-dom";
 
 const router = createHashRouter([
   {
-    index: true,
     path: "/",
-    element: <Home />,
+    element: <Layout />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+    ],
   },
 ]);
 
