@@ -1,31 +1,32 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 export default function Header() {
+  const navigate = useNavigate();
   return (
     <Style>
       <nav className="container flex justify-between items-center">
-        <div className="img-block">
+        <div className="img-block" onClick={() => navigate("/home")}>
           <img className="w-80" src="/logo-white.png" alt="" />
         </div>
         <ul className="flex justify-between">
           <li className="ml-64">
-            <Link className="fs-20 color-white" to="/">
+            <Link className="fs-20 color-white" to="/product">
               系列鏡框
             </Link>
           </li>
           <li className="ml-64">
-            <Link className="fs-20 color-white" to="/">
+            <Link className="fs-20 color-white" to="/store">
               門市據點
             </Link>
           </li>
           <li className="ml-64">
-            <Link className="fs-20 color-white" to="/">
+            <Link className="fs-20 color-white" to="/blog">
               部落格
             </Link>
           </li>
           <li className="ml-64">
-            <Link className="fs-20 color-white" to="/">
+            <Link className="fs-20 color-white" to="/question">
               常見問題
             </Link>
           </li>
