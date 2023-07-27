@@ -1,3 +1,4 @@
+import logo_white from "@/assets/image/logo-white.png";
 import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
@@ -7,7 +8,7 @@ export default function Header() {
     <Style>
       <nav className="container flex justify-between items-center">
         <div className="img-block" onClick={() => navigate("/home")}>
-          <img className="w-80" src="/logo-white.png" alt="" />
+          <img className="w-80" src={logo_white} alt="" />
         </div>
         <ul className="flex justify-between">
           <li className="ml-64">

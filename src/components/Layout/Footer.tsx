@@ -1,3 +1,6 @@
+import fb from "@/assets/image/ic-social-fb.png";
+import ig from "@/assets/image/ic_social_ig.png";
+import line from "@/assets/image/ic_social_line.png";
 import styled from "styled-components";
 
 export default function Footer() {
@@ -14,9 +17,9 @@ export default function Footer() {
           </ul>
 
           <div className="flex">
-            <img className="w-48 mr-32" src="/ic-social-fb.png" alt="" />
-            <img className="w-48 mr-32" src="/ic_social_ig.png" alt="" />
-            <img className="w-48" src="/ic_social_line.png" alt="" />
+            <img className="w-48 mr-32" src={fb} alt="" />
+            <img className="w-48 mr-32" src={ig} alt="" />
+            <img className="w-48" src={line} alt="" />
           </div>
 
           <div className="phone-block w-full flex items-center">
